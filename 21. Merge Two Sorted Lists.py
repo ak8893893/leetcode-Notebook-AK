@@ -22,16 +22,7 @@ class Solution:
             cur = cur.next                      # 把現在看的節點往後看一個
         cur.next= l1 or l2                      # l1 or l2 其中一個變成空值後離開迴圈 把剩下的節點接在後面就完成了
         return head.next                        # 回傳頭後面的節點鍊
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
         
         # # https://blog.csdn.net/coder_orz/article/details/51529359
         # # 思路三 : 用遞歸的思想
