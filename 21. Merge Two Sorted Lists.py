@@ -34,9 +34,7 @@ class Solution:
         # else:
         #     l2.next = self.mergeTwoLists(l1, l2.next)
         #     return l2
-    
-    
-    
+
     
         # 思路一
         # 合併後的鍊錶仍然是有序的，可以同時遍歷兩個鍊錶，
