@@ -1,3 +1,9 @@
+"""
+title : 0027. Remove Element
+author : AK 賴韋銘
+time : 2022/08/10
+"""
+
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         # 原地演算法 必須要用本來列表中的資料來進行置換 已減少額外的記憶體空間

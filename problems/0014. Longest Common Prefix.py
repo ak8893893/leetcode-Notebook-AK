@@ -1,3 +1,9 @@
+"""
+title : 0014. Longest Common Prefix
+author : AK 賴韋銘
+time : 2022/08/10
+"""
+
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         # my Answer

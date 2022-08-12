@@ -1,3 +1,9 @@
+"""
+title : 0020. Valid Parentheses
+author : AK 賴韋銘
+time : 2022/08/10
+"""
+
 class Solution:
     def isValid(self, s: str) -> bool:
         # # 參考答案

@@ -1,3 +1,9 @@
+"""
+title : 0028. Implement strStr()
+author : AK 賴韋銘
+time : 2022/08/10
+"""
+
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         

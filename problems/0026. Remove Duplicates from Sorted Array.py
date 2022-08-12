@@ -1,3 +1,9 @@
+"""
+title : 0026. Remove Duplicates from Sorted Array
+author : AK 賴韋銘
+time : 2022/08/10
+"""
+
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         

@@ -1,3 +1,9 @@
+"""
+title : 0001. Two Sum
+author : AK 賴韋銘
+time : 2022/08/10
+"""
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         
