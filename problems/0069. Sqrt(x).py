@@ -7,7 +7,7 @@ Time : 2022/08/30
 class Solution:
     def mySqrt(self, x: int) -> int:
 
-        # solution by AK
+        # solution by AK 5566
         # from 0 to x test every square bigger or less than x and find the answer
         # for test in range(x+1):
         #     A = test * test
