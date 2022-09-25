@@ -1,13 +1,11 @@
-class MyCircularQueue:
-    
-    """
-    Title : 0622. Design Circular Queue
-    Author : AK
-    Time : 2022/09/25
-    refer：https://blog.csdn.net/fuxuemingzhu/article/details/81027583
-    """
-    
-    
+"""
+Title : 0622. Design Circular Queue
+Author : AK
+Time : 2022/09/25
+refer：https://blog.csdn.net/fuxuemingzhu/article/details/81027583
+"""
+
+class MyCircularQueue:    
     def __init__(self, k: int):
         self.size = k
         self.queue = []
