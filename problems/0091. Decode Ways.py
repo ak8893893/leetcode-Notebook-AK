@@ -30,4 +30,4 @@ class Solution:
                 dp[i]+=dp[i-2]
 
         return dp[len(s)]
-print(Solution.numDecodings(self="",s="1202"))
+print(Solution.numDecodings(self="",s="12021571"))
