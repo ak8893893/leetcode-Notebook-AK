@@ -1,0 +1,24 @@
+use std::cmp::min; // 引用min函式庫
+
+impl Solution {
+    pub fn coin_change(coins: Vec<i32>, amount: i32) -> i32 {       // 定義一個名為coin_change的函數，接收硬幣面額的向量和目標金額，返回達到該金額所需的最少硬幣數量
+        let amount = amount as usize;                               // 將目標金額轉換成usize型別，以便用作索引
+        let mut dp = vec![i32::MAX; amount+1];                      // 創建一個動態規劃表，初始化為i32的最大值，表示未找到有效組合
+        dp[0] = 0;                                                  // 設置達到金額0所需的硬幣數量為0
+        
+        for coin in coins.iter(){                                   // 遍歷每一種硬幣面額
+            let coin = *coin as usize;                              // 將硬幣面額轉換成usize型別，以便用作索引
+            for i in coin..=amount{                                 // 從當前硬幣面額開始，遍歷到目標金額
+                if dp[i-coin] != i32::MAX{                          // 如果當前金額減去硬幣面額的結果不是i32的最大值，表示存在一種達到(i-coin)金額的方式
+                    dp[i] = min(dp[i], 1 + dp[i-coin]);             // 更新達到當前金額所需的最少硬幣數量
+                }
+            }
+        }
+
+        if dp[amount] == i32::MAX{                                  // 如果到最後都沒找到解 回傳-1
+            return -1;
+        }
+        
+        dp[amount]                                                  // 回傳最後一個 dp 的解
+    }
+}
